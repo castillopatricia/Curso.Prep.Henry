@@ -1,0 +1,19 @@
+FOR: es un bucle, y Los Bucles son una forma de repetir el mismo código varias veces.
+ for ( var i=0; i>10; i++){ tienen una variable, una parte condicional y un incremento de la variable
+
+ AND  Y(&&)  es un operador logico, se utiliza para comparar expresiones, si ambas son verdaderas, el resultado es verdadero.
+ si alguna de las dos es falsa, el resultado es falso.
+ los operadores logicos siempre buscan un valor booleano.
+  el &&  encuentra el primer valor falso, e interrumpe la evaluacion de las otras expresiones, y retorna ese valor y si todas son verdaderas evalua hasta la ultima expresion y retorna el ultimo valor.
+
+ OR se simboliza con || y significa O, sirve para comparar tambien dos expresiones y ver si ambas son verdaderas, el resultado es verdadero.
+ si ambas son falsas el resultado es falso y si alguna de las dos es verdadera y la otra es falsa., el resultado es verdadero.
+ para resolver y comparar expresiones se usa la tabla de la verdad logica.
+ or encuentra el primer valor verdadero, y retorna ese valor, si todos son falsos llega hasta el ultimo, y retorna ese valor.
+ 
+
+ y NOT SE SIMBOLIZA CON EL SIGNO !,  devuelve el valor contrario al que se espera.
+
+ el doble not, es usado tambien para convertir un valor a booleano.
+  
+  el NOT tiene prioridad o precedencia antes que && y || por lo que se resuelve primero.

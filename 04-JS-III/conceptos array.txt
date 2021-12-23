@@ -1,0 +1,14 @@
+concepto de array:
+ un array es un arraglo, es un objeto, que tiene en su interior, elementos.
+ esos elementos estan guardados con un indice y corchetes. cada elemento esta separado por comas
+  para   saber que es un array
+   var arr= []
+    eso es un array vacio,
+    los elementos de adentro estan ordenados o no, pero cada elemento tiene un indice, que empieza en [0]
+    la cuenta total de la longitud del array se hace utilizando
+     array.length// 6 o 7 o el numero que sea.
+      por ej 
+      array=['patricia', ' Juan']
+      array.length // 2
+       el indice [0] seria 'Patricia'
+       [1] seria 'Juan'

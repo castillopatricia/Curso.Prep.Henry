@@ -6,7 +6,8 @@ function obtenerMayor(x, y) {
   // Si son iguales, devuelve cualquiera de los dos
   // Tu código:
 
-  if (x > y) {
+  if (x > y) {   //  como pide devolver el mayor uso el condicional. si x es mayor a 1 entonces devuelvo X sino devuelvo Y.
+    // recordar que todo lo que esta debajo del return no se ejecuta si la condicion es verdadera.
     return x
   } else {
     return y
@@ -18,7 +19,7 @@ function mayoriaDeEdad(edad) {
   //Determinar si la persona según su edad puede ingresar a un evento.
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
-  if (edad >= 18) {
+  if (edad >= 18) {  // edad es la variable entonces debe ser mayor o igual a 18 para entrar, recordar que el signo de comparacion va a la izquierda y el = a la derecha siempre.
     return 'Allowed';
   } else {
     return 'Not allowed';
@@ -55,7 +56,7 @@ function saludo(idioma) {
     return 'Ni Hao!'
   } else if (idioma === 'ingles') {
     return 'Hello!'
-  } else {
+  } else {              // aqui el idioma es undefined o cualquier otro idioma  lo pongo en el else, porque si mis condiciones son falsas el else se ejecuta si o si
     return 'Hola!'
   }
 }
@@ -71,7 +72,7 @@ function colors(color) {
   //Caso default: devuelve --> "Color not found"
   //Usar el statement Switch.
 
-  switch (color) {
+  switch (color) {         // se usa el statement switch  se usa para evitar usar tantos if, si la condicion se cumple se EJECUTA EL BREAK.
 
     case 'blue':
       return ('This is blue')
@@ -95,7 +96,7 @@ function esDiezOCinco(numero) {
   // De lo contrario, devuelve "false"
   // Tu código:
 
-  return numero === 10 || numero === 5
+  return numero === 10 || numero === 5 // aqui la respuesta se puede simplificar porque si la comparacion es verdadera retornaria true, y si es falsa, false, entonces no es necesario escribir todo el if y la comparacion.
 
 }
 
@@ -104,7 +105,7 @@ function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
   // Tu código:
-  return numero < 50 && numero > 20
+  return numero < 50 && numero > 20  // aqui tambien se puede simplificar la respuesta porque si la comparacion es verdadera retorna true, sino retorna false.
 }
 
 
@@ -116,7 +117,8 @@ function esEntero(numero) {
   // De lo contrario, devuelve "false"
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
-  return Math.floor(numero) === numero
+  return Math.floor(numero) === numero //  es una de las formas mas simplificadas, porque si numero es 8.9 con el math.floor, me devuelve 8, entonces si lo comparo con 8 por ej es verdadero,
+                                          // SI NO ES VERDADERO ES DECIMAL.
 
 
 }
@@ -164,7 +166,7 @@ function esPrimo(numero) {
   // Pista: un número primo solo es divisible por sí mismo y por 1
   // Pista 2: Puedes resolverlo usando un bucle `for`
   // Nota: Los números 0 y 1 NO son considerados números primos
-  if (numero===0|| numero===1){
+  if (numero === 0 || numero === 1) {
     return false
   }
   for (var n = 2; n <= numero; n++) {
@@ -198,13 +200,13 @@ function tablaDelSeis() {
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí  
-  var j=6 
-  var arr=[]
-  for(num=0;num<=10;num++){
-    var resultado= num*j
+  var j = 6
+  var arr = []
+  for (num = 0; num <= 10; num++) {
+    var resultado = num * j
     arr.push(resultado)
-     
-  } 
+
+  }
   return arr
 }
 

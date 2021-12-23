@@ -249,18 +249,23 @@ function breakStatement(numero) {
   //devolver: "Se interrumpió la ejecución"
   //Pista: usá el statement 'break'
   // Tu código:
-  var suma = numero
+  var suma = numero // guardo mi numero que entrara
   var array = []  // creo un array vacio donde guardare los nuevos valores
-  for (var i = 0; i < 10; i++) { // el bucle donde mi condicion de repeticion es 10
+  var i = 0
+  for (; i < 10; i++) {  // el bucle donde accedo a los numeros de adentro
     suma = suma + 2 // la variable donde aumento en dos el numero que entra
     array.push(suma)
 
-    if (suma === i){  // la condicion donde comparo suma con la iteracion y retorno el mensaje
-      return 'Se interrumpió la ejecución'                      // el break para cortar la ejecucion del codigo.   
+    if (suma === i) { // la condicion donde comparo suma con la iteracion y retorno el mensaje
+      break
     }
   }
 
-  return array
+  if (i === 10) {
+    return array
+  } else {
+    return 'Se interrumpió la ejecución'                      // el break para cortar la ejecucion del codigo.   
+  }
 }
 
 
@@ -276,14 +281,11 @@ function continueStatement(numero) {
   var array = [] // el array vacio para guardar los valores.
   var suma = numero // una nueva variable para guardar los valores aumentados en 2
   for (var i = 0; i < 10; i++) {// el bucle para acceder a los numeros que estan adentro del bucle.
-    if (i == 5) continue
-    suma = suma + 2   
-      
-    array.push(suma)
-    
+    if (i === 5) continue
+    suma = suma + 2
 
-  
-}
+    array.push(suma)
+  }
   return array
 }
 
