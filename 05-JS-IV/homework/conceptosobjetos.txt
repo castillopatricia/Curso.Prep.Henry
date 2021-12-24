@@ -1,0 +1,22 @@
+conceptos de OBJETOS:
+Objetos: los objetos son tipos de datos, que en el interior pueden tener cualquier tipo de datos tambien,
+por ej: numeros, strings, arrays, otros objetos, metodos que son funciones y propiedades que son las variables.
+	la sintaxis es var nombreobjeto={ propiedad: valor}
+    
+    * Propiedades: son variables, estas variables contienen valor. el formato es (key:value); sirvn para guardar en su interior valores para ser utilizadas.
+	* Métodos: son funciones que van en el interior del objeto, la sintaxis es 
+    nombredelafuncion:function(){}
+    y los parametros de la misma
+	* Bucle `for…in`: los bucles for in son similares a los bucles de los arrays en la sintaxis pero varian en que se acceden a los elementos de los objetos,
+    y el bucle del array se accede a ellos por medio del indice. con valores numerticos.
+    la sintaxis es: for(var clave in usuario), esto me muestra los valores de todas las propiedades que estan en el interior del objeto usuario por ej.
+	* Notación de puntos vs notación de corchetes.
+    las notaciones sirven para acceder (mencionar) a los valores de una propiedad, y para asignarles un valor se utilizan con el =
+
+    las notaciones de puntos se llamar DOT NOTATION: Y la sintaxis es
+     nombredelobjeto. lapropiedad
+
+     CORCHETES O BRACKETS NOTATION.
+      nombredelobjeto['autor']
+      recordar que la diferencia con
+      nombredelobjeto[autor] es acceder al valor que esta guardado en la propiedad autor.

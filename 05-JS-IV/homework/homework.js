@@ -6,7 +6,8 @@ function crearGato(nombre, edad) {
   // Agrega un método (funcion) llamado "meow" que devuelva el string "Meow!"
   // Devuelve el objeto
   // Tu código:
-  var objeto = {
+  var objeto = {     // creo un objeto y a las propiedades les paso los valores de los argumentos,
+                      // luego creo un metodo y me devuelve el string 'Meow'
     'nombre': nombre,
     'edad': edad,
     meow: function () {
@@ -24,7 +25,7 @@ function agregarPropiedad(objeto, property) {
   // NOTA: El nombre de la propiedad no es "propiedad", el nombre es el valor del argumento llamado "property" (una cadena/string)
   // Tu código:
   objeto[property] = null // cuando pongo entre corchetes el argumento de la funcion accedo al valor que hay dentro.
-  return objeto
+  return objeto            
 }
 
 function invocarMetodo(objeto, metodo) { // METODO ES EL NOMBRE DE UN METODO.
@@ -41,7 +42,7 @@ function multiplicarNumeroDesconocidoPorCinco(objetoMisterioso) {
   // Multiplica el numeroMisterioso por 5 y devuelve el producto
   // Tu código:
 
-  var producto = objetoMisterioso.numeroMisterioso * 5
+  var producto = objetoMisterioso.numeroMisterioso * 5  // a los valores de una operacion LOS DEBERIA GUARDAR EN UNA VARIABLE!! ES MUY IMPORTANTE ESTO!
   return producto
 
 }
@@ -51,7 +52,7 @@ function eliminarPropiedad(objeto, unaPropiedad) {
   // tip: tenes que usar bracket notation
   // Devuelve el objeto
   // Tu código:
-  delete objeto[unaPropiedad]
+  delete objeto[unaPropiedad]  // EL KEYWORD PARA ELIMINAR UNA PROPIEDAD!!!
   return objeto
 }
 
@@ -60,7 +61,7 @@ function nuevoUsuario(nombre, email, password) {
   // Devuelve el objeto
   // Tu código:
   var objeto = {
-    nombre: nombre,
+    nombre:nombre,
     email: email,
     password: password,
   }
@@ -72,14 +73,16 @@ function tieneEmail(usuario) {
   // De lo contratio, devuelve "false"
   // Tu código: 
 
-  return !!usuario.email
+  return !!usuario.email   // la doble negacion CONVIERTE MI VALOR A BOOLEANO. entonces si no es undefined o 0, etc, DARA TRUE-
 }
 function tienePropiedad(objeto, propiedad) {
   // Devuelve "true" si el objeto (parámetro "objeto") tiene una propiedad (key) cuyo nombre es igual al valor del argumento "propiedad"
   // "propiedad" es un string
   // De lo contrario, devuelve "false"
   // Tu código: 
-  return !!objeto[propiedad]
+  return !!objeto[propiedad]   // accedo al valor del argumento propiedad, con los corchetes.
+  // ese valor es un string,
+  //
 }
 
 function verificarPassword(usuario, password) {
@@ -87,14 +90,14 @@ function verificarPassword(usuario, password) {
   // Devuelve "true" si coinciden
   // De lo contrario, devuelve "false"
   // // Tu código:
-  return usuario.password === password // si mi string password enviada es igual a la propiedad password
+  return usuario.password === password // si mi  password enviada es igual a la propiedad password
 }
 
 function actualizarPassword(usuario, nuevaPassword) {
   // Reemplaza la contraseña existente en el objeto "usuario" con el valor de "nuevagPassword"
   // Devuelve el objeto
   // Tu código:
-  usuario.password = nuevaPassword
+  usuario.password = nuevaPassword // reemplazo mi password por nuevapassword lo de arriba es error de tipeo
   return usuario
 }
 
@@ -104,7 +107,7 @@ function agregarAmigo(usuario, nuevoAmigo) {
   // Devuelve el objeto "usuario"
   // // Tu código:
   usuario.amigos.push(nuevoAmigo)
-  return usuario
+  return usuario  // añado a mi objeto que tiene un array un valor adentro con el push
 }
 
 function pasarUsuarioAPremium(usuarios) {
@@ -115,10 +118,11 @@ function pasarUsuarioAPremium(usuarios) {
   // Tu código:
 
 
-  for (i = 0; i < usuarios.length; i++) {
-    // usuarios[i].esPremium = true
+  for (i = 0; i < usuarios.length; i++) { // aqui se accede a los elementos del array usuarios con un bucle.// despues
+    // accedo a un elemento del array con usuario[I](los parentesis.)
+    // usuarios[i].esPremium = true   // defino una variable usuario que va a guardar el elemento del array.
     var usuario = usuarios[i]
-    usuario.esPremium = true
+    usuario.esPremium = true // y luego defino la propiedad de mi objeto con el valor true.
 
   }
   return usuarios
@@ -142,7 +146,7 @@ function sumarLikesDeUsuario(usuario) {
     suma = suma + usuario.posts[i].likes // sumo todas las propiedades likes de los objetos que estan en el array posts
 
   }
-  return suma
+  return suma // retorno la suma de los likes.
 
 }
 
