@@ -69,7 +69,7 @@ class Persona {
     this.nombre = nombre
     this.apellido = apellido
     this.edad = edad
-    this.Domicilio = domicilio
+    this.domicilio = domicilio
   }
 
   detalle() {
@@ -93,7 +93,7 @@ function crearInstanciaPersona(nombre, apellido, edad, dir) {
   var persona = new Persona(nombre, apellido, edad, dir) // aqui creo una nueva instancia con la palabra new y la clase.
   return persona
 }
-
+// guardo los valores en una variable para pedir el retorno de esa variable persona. ojo que tb es el nombre de la clase.
 
 
 
@@ -101,8 +101,9 @@ function agregarMetodo() {
   //La función agrega un método "datos" a la clase Persona que toma el nombre y la edad de la persona y devuelve: 
   //Ej: "Juan, 22 años"
 
-  Persona.prototype.datos = function () {
-    return this.nombre + ', ' + this.edad + ' años'
+  Persona.prototype.datos = function () {// se agrega al prototipo clase un metodo 
+    return this.nombre + ', ' + this.edad + ' años' // se concatena strings  se puede hacer de ambas formas.
+
     // return `${this.nombre}, ${this.edad} años`
   }
 }
