@@ -60,5 +60,5 @@ archivo en cualquiera de estas carpetas, estás en el lugar equivocado.
 /* Ejercicio 7. */
 #Ejercicio7{
     display:flex;
-    flex-direction: column;
+    justify-content: center;
 }
