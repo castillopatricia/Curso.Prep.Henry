@@ -17,7 +17,7 @@ archivo en cualquiera de estas carpetas, estás en el lugar equivocado.
 
 
 /* Acá va tu código */
-#ejercicio2{
+#ejercicioDos{
     display:none;
 
 
@@ -25,10 +25,10 @@ archivo en cualquiera de estas carpetas, estás en el lugar equivocado.
 /* Ejercicio 3: */
 
 /* Acá va tu código */
-#ejercicio3{
+#ejercicioTres{
     position:absolute;
-    left:200 px;
-    top:100 px;
+    left:200px;
+    top:100px;
 
 }
 
@@ -37,7 +37,7 @@ archivo en cualquiera de estas carpetas, estás en el lugar equivocado.
 /* Ejercicio 4: */
 
 /* Acá va tu código */
-#ejercicio4{
+#ejercicioCuatro{
     position:fixed;
     top:0;
     left:0;
@@ -48,7 +48,7 @@ archivo en cualquiera de estas carpetas, estás en el lugar equivocado.
 /* Ejercicio 5: */
 
 /* Acá va tu código */
-#Ejercicio5{
+#ejercicioCinco{
     display: flex;
     justify-content: space-between;
     align-items:center;
@@ -58,7 +58,7 @@ archivo en cualquiera de estas carpetas, estás en el lugar equivocado.
 
 
 /* Ejercicio 7. */
-#Ejercicio7{
+#ejercicioSiete{
     display:flex;
     justify-content: center;
 }
