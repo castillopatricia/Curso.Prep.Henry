@@ -174,10 +174,8 @@ function esPrimo(numero) {
     if (numero % n === 0 && numero !== 2) {
       return false
     }
-    if (n === numero - 1 || numero === 2) {
-      return true
-    }
   }
+  return true
 }
 
 function esVerdadero(valor) {
