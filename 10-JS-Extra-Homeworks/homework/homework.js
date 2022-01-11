@@ -47,7 +47,9 @@ function capToFront(s) {
   var mayuscula = '';
   var minuscula = '';
   for (i = 0; i < s.length; i++) {
-    if (s[i] === s[i].toUpperCase()) {
+    if (s[i] === s[i].toUpperCase()) {//creo dos variables con strings vacio para ir viendo cuales son mayusculas y minusculas.
+    // itero sobre la cadena y si mi elemento es igual al elemento en mayuscula. lo guardo en mayuscula.
+    // si mi elemento no es mayuscula// lo guardo en minuscula- y retorno las mayusculas + minusculas.
       mayuscula = mayuscula + s[i];
     }
     else {
