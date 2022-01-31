@@ -145,13 +145,13 @@ function sumarLikesDeUsuario(usuario) {
 
   // Tu código:
   var suma = 0
-  
+
   usuario.posts.forEach(function (post) {
     suma += post.likes
 
   })
   return suma
-} 
+}
 
 function agregarMetodoCalculoDescuento(producto) {
   // Agregar un método (función) al objeto "producto" llamado "calcularPrecioDescuento"
@@ -163,13 +163,14 @@ function agregarMetodoCalculoDescuento(producto) {
   // producto.porcentajeDeDescuento -> 0.2 (o simplemente ".2")
   // producto.calcularPrecioDescuento() -> 20 - (20 * 0.2)
   // Tu código:
-  producto.calcularPrecioDescuento=function(){
-    var resultado=producto.precio-(producto.precio*producto.porcentajeDeDescuento)
+  producto.calcularPrecioDescuento = function () {
+    var resultado = producto.precio - (producto.precio * producto.porcentajeDeDescuento)
     return resultado
-  }
-  
 
-return producto
+  }
+
+
+  return producto
 }
 // No modificar nada debajo de esta línea
 // --------------------------------
